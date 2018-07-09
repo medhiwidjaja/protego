@@ -6,7 +6,7 @@ defmodule Protego.Mixfile do
   def project do
     [app: :protego,
      version: @version,
-     elixir: "~> 1.2",
+     elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
@@ -41,12 +41,12 @@ defmodule Protego.Mixfile do
       {:ex_doc, "~> 0.11", only: :docs},
 
       # Dev Dependencies
-      {:phoenix, "~> 1.2.0"},
-      {:gettext, "~> 0.8"},
-      {:phoenix_html, "~> 2.6.0"},
+      {:phoenix, "~> 1.3.0"},
+      {:gettext, "~> 0.11"},
+      {:phoenix_html, "~> 2.10"},
 
-      {:comeonin, "~> 2.0.0"},
-      {:guardian, "~> 0.12.0"}]
+      {:comeonin, "~> 4.1"},
+      {:guardian, "~> 1.1"}]
   end
 
   defp package do
